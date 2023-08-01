@@ -47,7 +47,7 @@ export default function Home({params}: any) {
     <main className="flex min-h-screen flex-col items-center justify-between ">
           <Header/>
           <div className="container mx-auto py-8">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-4  md:grid-cols-3">
       {paginatePosts.map((post: any) => (
         <Link  key={post.id} href={`/blog/${post.id}`}>
         <BlogCard
